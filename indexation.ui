@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Indexation</class>
+ <widget class="QMainWindow" name="Indexation">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>737</width>
+    <height>469</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Indexation</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>20</y>
+      <width>421</width>
+      <height>351</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ImageShow">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>50</y>
+      <width>231</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cliquer sur Fichier pour ouvrir</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Indexattion">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>380</y>
+      <width>80</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>Indexation</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>380</y>
+      <width>531</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>12</number>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>737</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionOuvrir_une_base_d_images"/>
+   </widget>
+   <widget class="QMenu" name="menuEdition">
+    <property name="title">
+     <string>Edition</string>
+    </property>
+    <widget class="QMenu" name="menuAlgorithme">
+     <property name="title">
+      <string>Algorithme</string>
+     </property>
+     <addaction name="actionHistogramme_Couleur"/>
+     <addaction name="actionSIFT"/>
+     <addaction name="actionSURF"/>
+     <addaction name="actionGLCM"/>
+     <addaction name="actionHistogramme_HSV"/>
+    </widget>
+    <addaction name="menuAlgorithme"/>
+    <addaction name="actionRecherche"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuEdition"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOuvrir_une_base_d_images">
+   <property name="text">
+    <string>Ouvrir une base d'images</string>
+   </property>
+  </action>
+  <action name="actionHistogramme_Couleur">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Histogramme Couleur</string>
+   </property>
+  </action>
+  <action name="actionSIFT">
+   <property name="text">
+    <string>SIFT</string>
+   </property>
+  </action>
+  <action name="actionSURF">
+   <property name="text">
+    <string>SURF</string>
+   </property>
+  </action>
+  <action name="actionGLCM">
+   <property name="text">
+    <string>GLCM</string>
+   </property>
+  </action>
+  <action name="actionHistogramme_HSV">
+   <property name="text">
+    <string>Histogramme HSV</string>
+   </property>
+  </action>
+  <action name="actionRecherche">
+   <property name="text">
+    <string>Recherche</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
